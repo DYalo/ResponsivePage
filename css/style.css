@@ -59,6 +59,23 @@ header{
 	float: left;
 }
 
+.icon-menu{
+	display: none;
+	height: 30px;
+	width: 12px;
+	float: left;
+	padding: 5px 0;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.divide{
+	display: block;
+	height: 2px;
+	margin: 3px 0;
+	background: #f1f1f1;
+}
+
 .nav li{
 	float: right;
 	list-style-type: none;
@@ -82,7 +99,31 @@ header{
 }
 
 
+.sidebar{
+	width: 300px;
+	padding: 20px;
+	float: left;
+	background: #fff;
+	-webkit-webkit: left 1s ease-out 0.5s;
+	-moz-webkit: left 1s ease-out 0.5s;
+	-ms-webkit: left 1s ease-out 0.5s;
+	-o-webkit: left 1s ease-out 0.5s;
+	webkit: left 1s ease-out 0.5s;
+	transition: left 1s ease-out 0.5s;
+
+}
+
+.content{
+	margin-left: 300px;
+	padding: 20px;
+	background: #ddd;
+}
+
+
+
+
 @media(max-width: 768px)  {
+
 	body{ padding-top: 60px; }
 	header {
 		 position: fixed;
@@ -91,14 +132,17 @@ header{
 		 left: 0;
 		 height: 50px;
 	}
+
 	.logo img {height: 30px;}
 
 	.nav {
 		position: absolute;
 		top: 100%;
-		left: 0;
+		left: 50%;
 		right: 0;
 		display: none;
+		width: 370px;
+		
 	}
 	.nav li {float: none;}
 	.nav li a {
@@ -120,5 +164,28 @@ header{
 		margin: -10px 0;
 		height: 50px;
 	
+	}
+
+
+
+
+
+	.icon-menu {
+		display: block;
+		margin-left: -10px;
+	}
+
+	.sidebar{
+		position: fixed;
+		left: -250px;
+		width: 250px;
+		height: 100%;
+	}
+
+	.sidebar.active{
+		left: 0;
+	}
+	.content{
+	margin-left: 0;
 	}
 }
