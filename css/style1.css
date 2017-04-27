@@ -1,0 +1,32 @@
+.gallery{
+	
+    width: 960px;
+    max-width: 100%; 
+    min-width: 500px;
+    height: 100%;
+}
+
+.gallery img{
+	
+	float: left;
+	padding: 1%;
+}
+.picture{
+	margin:5px 0 0 42px;
+}
+
+@media screen and (max-width: 768px) {
+	
+    .gallery {
+        min-width: 320px;
+    }
+    .gallery img {
+        max-width: 48%; 
+        height: auto;
+        padding: 1%;
+}
+
+    .icon-menu{
+    	display: none;
+    }
+}

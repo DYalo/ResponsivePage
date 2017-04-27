@@ -20,6 +20,8 @@ time, mark, audio, video {
 }
 html {height: 100%;}
 body {
+	opacity:0;
+	transition:.5s;
 	height: 100%;
 	font: 14px/24px Arial, Tahoma, sans-serif;
 	background-color: #ebebeb;
@@ -176,6 +178,7 @@ header{
 	}
 
 	.sidebar{
+
 		position: fixed;
 		left: -250px;
 		width: 250px;
