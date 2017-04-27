@@ -5,30 +5,10 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src='js/script1.js'></script>
+	<script src='js/script2.js'></script>
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var touch = $('#touch-menu');
-			var menu = $('.nav');
-			$(touch).on('click', function(e){
-				e.preventDefault();
-				menu.slideToggle();
-			});
-			$(window).resize(function(){
-				var wid = $(window).width();
-				if(wid > 760 && menu.is(':hidden')){
-					menu.removeAttr('style')
-				}
-			});
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			$('.icon-menu').click(function(event){
-				$('.sidebar').toggleClass('active');
-			});
-		});
-	</script>
+	
 
 </head>
 <body>
@@ -53,7 +33,7 @@
 		<a href="" id="touch-menu">Menu</a>
 		<nav>
 			<ul class="nav clearfix">
-				<li><a href="#">Text_1</a></li>
+				<li><a href="./gallery.html">Gallery</a></li>
 				<li><a href="#">Text_2</a></li>
 				<li><a href="#">Text_3</a></li>
 				<li><a href="#">Text_4</a></li>
