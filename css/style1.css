@@ -4,16 +4,15 @@
     max-width: 100%; 
     min-width: 500px;
     height: 100%;
-}
-
-.gallery img{
-	
-	float: left;
-	padding: 1%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 .picture{
-	margin:5px 0 0 42px;
+    padding-right: 5px;
 }
+
 
 @media screen and (max-width: 768px) {
 	
